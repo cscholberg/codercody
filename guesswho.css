@@ -1,0 +1,131 @@
+* { margin:0;
+
+}
+
+header {
+	background-color: #FFCC00;
+}
+
+body {
+	background-color: white;
+}
+
+h2 {
+	text-align: center;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav {
+	border: 2px solid #246BB2;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px gray;
+	background-color: #3399FF;
+	color: white;
+	text-shadow: 2px 1px 2px #000015;
+}
+
+.nav:hover {
+	border: 0px solid red;
+	background-color: #4700B2;
+	box-shadow: 2px 2px 2px gray;
+}
+
+.nav a {
+	color: white;
+}
+
+.nav a:link {
+	text-decoration: none;
+}
+
+.nav a:hover {	
+	text-shadow: 1px 1px 1px black;
+}
+#container {
+	position:relative;
+	margin: 0px auto;
+	width: 960px;
+}
+
+
+#buttons {
+	width: 975px;
+	margin: 0px 0px 12px 200px;
+}
+
+.piece {
+	border: 2px solid #246BB2;
+	box-shadow: 2px 2px 2px black;
+}
+
+.attributes {
+	margin-top: 10px;
+	background-color: blue;
+	color: white;
+}
+
+.attributes:hover {
+	background-color: red;
+}
+
+#guessName {
+	margin: 12px 260px 20px 550px;
+}
+
+#player {
+	margin: 12px 260px 20px 100px;
+}
+
+#draw {
+	margin: -40px 0px 20px 525px;
+}
+
+.submitButtons {
+	background-color: yellow;
+	color: black;
+	font-weight: bold;
+}
+
+.submitButtons:hover {
+	background-color: green;
+	color: white;
+}
+
+#buttonHowTo {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	margin-top: 10px;
+	float: left;
+}
+
+th {
+	font-size: 34px;
+	margin-left: 300px;
+}
+
+.back {
+	margin: 4px 2px 2px 2px;
+}
+
+#attrField {
+	width: 100px;
+	height: 25px;
+	background-color: red;
+	color: white;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#tempAttr {
+	font-weight: bolder;
+}
+
+#questionField {
+	background-color: #246BB2;
+	color: white;
+}

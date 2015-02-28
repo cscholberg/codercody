@@ -1,0 +1,185 @@
+* { margin:0;
+
+}
+
+header {
+	background-color: #FFCC00;
+}
+
+h2 {
+	text-align: center;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav {
+	border: 2px solid #246BB2;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px gray;
+	background-color: #3399FF;
+	color: white;
+	text-shadow: 2px 1px 2px #000015;
+}
+
+.nav:hover {
+	border: 0px solid red;
+	background-color: #4700B2;
+	box-shadow: 2px 2px 2px gray;
+}
+
+.nav a {
+	color: white;
+}
+
+.nav a:link {
+	text-decoration: none;
+}
+
+.nav a:hover {	
+	text-shadow: 1px 1px 1px black;
+}
+
+body {
+	background-color: white;
+}
+
+img {
+	float: left;
+}
+
+h3 {
+	text-align: center;
+}
+
+#graphics {
+	height: 400px;
+	width: 450px;
+	border: 2px solid black;
+	float: left;
+}
+
+p {
+	text-align: center;
+}
+
+#gameSpace {
+	height: 400px;
+	width: 450px;
+	border: 2px solid black;
+	float: right;
+}
+
+#guessField {
+	margin-left: 140px;
+}
+
+#diffLevelField {
+	margin-left: 140px;
+}
+
+#submit {
+	background-color: black;
+	color: white;
+	border-radius: 15px;
+}
+
+#start {
+	background-color: black;
+	color: white;
+	border-radius: 15px;	
+}
+#base {
+	height: 2px;
+	width: 130px;
+	background-color: black;
+	margin-top: 280px;
+	margin-left: 180px;
+}
+
+#pole {
+	height: 240px;
+	width: 2px;
+	background-color: black;
+	margin-top: -240px;
+	margin-left: 310px;
+}
+
+#top {
+	height: 2px;
+	width: 65px;
+	background-color: black;
+	margin-top: -240px;
+	margin-left: 245px;
+}
+
+#rope {
+	height: 6px;
+	width: 6px;
+	background-color: #996600;
+	margin-left: 250px;
+}
+
+#head {
+	border: 2px solid black;
+	height: 40px;
+	width: 40px;
+	border-radius: 100%;
+	margin-left:231px;
+	display: none;
+}
+
+#torso {
+	border: 2px solid black;
+	height: 100px;
+	width: 45px;
+	margin-left: 228px;
+	display: none;
+}
+
+#leftArm {
+	border: 2px solid black;
+	height: 55px;
+	width: 15px;
+	margin-left: 210px;
+	margin-top: -104px;
+	display: none;
+}
+
+#rightArm {
+	border: 2px solid black;
+	height: 55px;
+	width: 15px;
+	margin-left: 276px;
+	margin-top: -59px;
+	display: none;
+}
+
+#leftLeg {
+	border: 2px solid black;
+	height: 65px;
+	width: 15px;
+	margin-left: 228px;
+	margin-top: 44px;
+	display: none;
+}
+
+#rightLeg {
+	border: 2px solid black;
+	height: 65px;
+	width: 15px;
+	margin-left: 258px;
+	margin-top: -69px;
+	display: none;	
+}
+
+#progress {
+	text-align: center;
+}
+
+#guessedLetters {
+	text-align: center;
+}
+

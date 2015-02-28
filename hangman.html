@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="main.css">
+<script src="jquery-1.11.1.js"></script>
+<script src="hangman.js"></script>
+<title>A Game of Hangman</title>
+</head>
+
+<body>
+<header>
+	<h2>Please select a page from below:</h2>
+	<br>
+	<nav>
+		<table align="center">
+			<tr>
+			<td><a class="nav" href="http://codercody.com/index.html">Home</a></td>
+			<td><a class="nav" href="http://codercody.com/bio.html">A Short Bio</a></td>
+			<td><a class="nav" href="http://codercody.com/resume.html">Resume</a></td>
+			<td><a class="nav" href="http://codercody.com/hangman.html">Hangman</a></td>
+			<td><a class="nav" href="http://codercody.com/guesswho.html">GuessWho?</a></td>
+			<td><a class="nav" href="/chat">Chat</a></td>
+			<td><a class="nav" href="http://codercody.com/contact.html">Contact Me</a></td>
+			</tr>
+		</table>
+		<hr>
+	</nav>
+</header>
+<div id="container">	
+	<div id="graphics">
+		<div id="base"></div>
+		<div id="pole"></div>
+		<div id="top"></div>
+		<div id="rope"></div>
+		<div id="head"></div>
+		<div id="torso"></div>
+		<div id="leftArm"></div>
+		<div id="rightArm"></div>
+		<div id="leftLeg"></div>
+		<div id="rightLeg"></div>
+
+	</div>
+
+	<div id="gameSpace">
+
+		<br><p>Enter 1 - 5 for Difficulty Level (1 Is the Easiest)</p><br>
+		<div id="difficulty">
+		<input id="diffLevelField" type="text" name="diffInput">
+		<button id="start"><p>Start Game!</p>
+		</button>
+		<br>
+		<br>
+		</div>
+
+
+		<p>Guess a Letter or Word</p><br>
+		<div id="userGuess">
+		<input id="guessField" type="text" name="input">
+		<button id="submit"><p>Submit</p></button><br><br>
+		</div>
+
+		<p>Guessed Letters</p><br>
+		<div id="guessedLetters">
+		</div>
+
+		<br><p>Progress</p><br>
+		<div id="progressBox">
+
+		</div>
+
+
+
+	</div>
+
+	</div>
+	<br><p><b>YOUR SCORE</b></p>
+	<div id="score">
+	
+	<br><br><p>WINS</p><br><br>
+	<div id="wins"><p>0</p></div>
+	
+
+	<br><br><p>LOSES</p><br><br>
+	<div id="loses"><p>0</p></div>
+
+	</div>
+</div>
+
+</body>
+</html>

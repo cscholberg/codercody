@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="guesswho.css">
+<script src="jquery-1.11.1.js"></script>
+<script src="script.js"></script>
+<script src="guesswho.js"></script>
+<title>A Game of GuessWho?</title>
+</head>
+
+<body>
+<header>
+	<h2>Please select a page from below:</h2>
+	<br>
+	<nav>
+		<table>
+			<tr>
+			<td class="nav"><a href="http://codercody.com/index.html">Home</a></td>
+			<td class="nav"><a href="http://codercody.com/bio.html">A Short Bio</a></td>
+			<td class="nav"><a href="http://codercody.com/resume.html">Resume</a></td>
+			<td class="nav"><a href="http://codercody.com/hangman.html">Hangman</a></td>
+			<td class="nav"><a href="http://codercody.com/guesswho.html">GuessWho?</a></td>
+			<td class="nav"><a href="/chat">Chat</a></td>
+			<td class="nav"><a href="http://codercody.com/contact.html">Contact Me</a></td>
+			</tr>
+		</table>
+		<hr>
+	</nav>
+</header>
+
+<div id="gameBoard">
+		
+		<table>
+			
+		
+		<!-- row 1 of 3 -->
+			<tr>
+				<td class="piece"><img class="hairY sexM eyesG glassesY hatY" src="images/1 - YMGYY.jpg"/></td>
+				<td class="piece"><img class="hairB sexM eyesG glassesY hatN" src="images/26 - BMGYN.jpg"/></td>
+				<td class="piece"><img class="hairY sexM eyesC glassesN hatY" src="images/11 - YMCNY.jpg"/></td>
+				<td class="piece"><img class="hairB sexM eyesB glassesN hatY" src="images/31 - BMBNY.jpg"/></td>
+				<td class="piece"><img class="hairY sexM eyesB glassesY hatN" src="images/6 - YMBYN.jpg"/></td>
+				<td class="piece"><img class="hairB sexM eyesC glassesN hatN" src="images/36 - BMCNN.jpg"/></td>
+			</tr>
+		
+		<!-- row 2 of 3 -->	
+			<tr>
+				<td class="piece"><img class="hairY sexF eyesG glassesN hatY" src="images/15 - YFGNY.jpg"/></td>
+				<td class="piece"><img class="hairY sexF eyesB glassesN hatN" src="images/20 - YFBNN.jpg"/></td>
+				<td class="piece"><img class="hairB sexM eyesC glassesY hatY" src="images/33 - BMCYY.jpg"/></td>
+				<td class="piece"><img class="hairY sexF eyesC glassesN hatY" src="images/23 - YFCNY.jpg"/></td>
+				<td class="piece"><img class="hairB sexM eyesC glassesY hatN" src="images/34 - BMCYN.jpg"/></td>
+				<td class="piece"><img class="hairB sexM eyesC glassesN hatY" src="images/35 - BMCNY.jpg"/></td>
+			</tr>
+			
+		<!-- row 3 of 3 -->	
+			<tr>
+				<td class="piece"><img class="hairB sexM eyesB glassesY hatN" src="images/30 - BMBYN.jpg"/></td>
+				<td class="piece"><img class="hairY sexM eyesC glassesY hatY" src="images/9 - YMCYY.jpg"/></td>
+				<td class="piece"><img class="hairY sexF eyesC glassesY hatY" src="images/21 - YFCYY.jpg"/></td>
+				<td class="piece"><img class="hairB sexM eyesG glassesN hatN" src="images/28 - BMGNN.jpg"/></td>
+				<td class="piece"><img class="hairY sexM eyesG glassesN hatN" src="images/4 - YMGNN.jpg"/></td>
+				<td class="piece"><img class="hairY sexM eyesB glassesN hatN" src="images/8 - YMBNN.jpg"/></td>
+			</tr>
+
+		</table>
+
+	</div><!-- end div gameBoard -->
+
+
+	<div id="buttons">
+		
+		<button id="zero" class="attributes"><p>Red Hair</p></button>	
+		<button id="one" class="attributes"><p>Blonde Hair</p></button>
+		<button id="two" class="attributes"><p>Brown Hair</p></button>
+		<button id="three" class="attributes"><p>Male</p></button>
+		<button id="four" class="attributes"><p>Female</p></button>
+		<button id="five" class="attributes"><p>Green Eyes</p></button>
+		<button id="six" class="attributes"><p>Brown Eyes</p></button>
+		<button id="seven" class="attributes"><p>Blue Eyes</p></button>
+		<button id="eight" class="attributes"><p>Glasses</p></button>
+		<button id="nine" class="attributes"><p>No Glasses</p></button>
+		<button id="ten" class="attributes"><p>Hat</p></button>
+		<button id="eleven" class="attributes"><p>No Hat</p></button>
+		<button id="continue" class="submitButtons"><p>CONTINUE...</p></button>
+	</div><!--end div buttons-->
+
+
+	<div id="guessName">
+		<form name="username" action="javascript:setName()">
+		<input id="nameField" type="text" name="input">
+		<button id="submitName" class="submitButtons"><p>SUBMIT NAME</p></button>
+		</form>
+	</div><!--end div guessName-->
+
+	<div id="questionField">
+		
+			<p align="center" style="font-weight:bold">Computer, does your character have/is your character a...</p><br>
+			<div id='attrField'>
+		</div>
+	</div><!-- end div questionField -->
+
+	
+	<div id="player">
+		<p id="buttonHowTo" style="float:left">HOW TO PLAY:<br>Objective: To guess the computer's character<br>1 - Draw a card to get your character<br>2 - Select an attribute and hit CONTINUE... to make a guess<br>3 - The appropriate cards will be turned over<br>4 - When you are ready to guess your opponent's name,<br> do so in the box and hit SUBMIT NAME.<br>Warning! A wrong guess will cause you to lose the game! </p>
+		<img src="QuestionMark.jpg" style="margin-left: 75px"/><br>
+		<button id="draw" class="submitButtons"><p>Draw Card</p></button>
+	</div><!--end div player-->
+
+
+</div><!--end div container-->
+
+</body>
+</html>
